@@ -19,235 +19,208 @@ html{font-size: 62.5%;}
     }
 
     .MenuHambIcon{
-        width: 40px;
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        cursor: pointer;
-        z-index: 1;
+    width: 40px;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    }
+
+    .logoBgt{max-width: 100%;}
+
+    /* Form */
+
+    .containerForm{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    background-color: #212121;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    }
+
+    .containerForm h2{
+    margin-bottom: 2.2rem;
+    font-size: 35px
+    }
+    .containerForm p{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    }
+    .containerForm a{
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #ee5a37;
+    font-weight: 700;
+    }
+    .containerForm a i{
+    color: #ee5a37;
+    margin-right: 10px;
+    }
+    .containerForm form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    }
+    .containerForm form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    }
+    .containerForm .botonEnviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #ee5a37;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    }
+    .containerForm .botonEnviar:hover{
+    background: #ee5a37;
+    }
+
+
+    .infoForm img{
+    width: 30px;
+    height: 30px;
+    transform: translateY(10px);
+    }
+
+    .containerForm a{width: 70%;}
+
+    .contactoNav{
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    }
         
-        }
-
-        .logoBgt{max-width: 100%;}
-
-        /* Form */
-
-        .containerForm{
-            width: 100%;
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 50px;
-            margin-top: 90px;
-            background-color: #212121;
-            padding-left: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 30px;
-            font-family: 'Montserrat', sans-serif; 
-        }
-        .containerForm h2{
-            margin-bottom: 2.2rem;
-            font-size: 35px
-        }
-        .containerForm p{
-            font-size: 2rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .containerForm a{
-            font-size: 1.5rem;
-            display: inline-block;
-            text-decoration: none;
-            width: 100%;
-            margin-bottom: 15px;
-            color: #ee5a37;
-            font-weight: 700;
-        }
-        .containerForm a i{
-            color: #ee5a37;
-            margin-right: 10px;
-        }
-        .containerForm form .campo, textarea{
-            width: 100%;
-            padding: 15px 10px;
-            font-size: 16px;
-            border: 1px solid #dbdbdb;
-            margin-bottom: 20px;
-            border-radius: 3px;
-            outline: 0px;
-        }
-        .containerForm form textarea{
-            max-width: 530px;
-            min-width: 530px;
-            min-height: 140px;
-            max-height: 150px;
-        }
-        .containerForm .botonEnviar{
-            padding: 15px;
-            font-size: 16px;
-            border: none;
-            outline: 0px;
-            background: #ee5a37;
-            color: white;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: all 300ms ease;
-        }
-        .containerForm .botonEnviar:hover{
-            background: #ee5a37;
-        }
-
-
-        .infoForm img{
-            width: 30px;
-            height: 30px;
-            transform: translateY(10px);
-        }
-
-        .containerForm a{width: 70%;}
-
-
+    .contactoMenu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform: translateY(0);
+    }
         
-
-
-
-
-
-
-
-        @media screen and (min-width: 900px){
+        
+    .MenuHamb__checkbox{display: none;}
+        
+    .MenuHamb__checkbox:checked + .contactoMenu { 
+    transform: translateY(0);
+    }
+        
+    .contactoMenu__pag{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: Bebas;
+    }
     
-            .MenuHambIcon{
-                display: none;
-            }
+    .contactoMenu__item{
+    padding-right: 50px;
+    padding-left: 50px;
+    }
+            
+    .contactoMenu__logo{
+    width: 96px;
+    height:96px;
+    }
+
+    body{background-image: url("../Media/Contacto/ContactoPC2.png");}
+
+/*Responsive*/
+
+    @media screen and (min-width: 900px){
+    
+    .MenuHambIcon{
+        display: none;}
+    }
+
+    @media screen and (max-width: 900px){
+    
+    .contactoMenu{
+        flex-direction: column;
+        transform: translateY(-100%);
+        background-color: #282828;
+        width: 900px;
+        max-width: 100%;}
+                
+    .contactoMenu__logo{display: none;}
         
-        }
+    .contactoMenu__pagN{color: #fff;}
         
-        .contactoNav{
+    .contactoMenu__pag{font-size: 2.2rem;}
+            
+    body{
+        background-image: url("../Media/Contacto/ContactoTablet.png");
+        background-size: cover;}
+
+    .contactoMain{
         display: flex;
-        justify-content: center;
-        background-color: #212121;
-        }
-        
-        .contactoMenu{
-        list-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-        background-color: #212121;
-        display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        transition: 0.4s;
-        transform: translateY(0);
-        }
-        
-        
-        .MenuHamb__checkbox{display: none;}
-        
-        .MenuHamb__checkbox:checked + .contactoMenu { 
-            transform: translateY(0);
-        
-        }
-        
-        .contactoMenu__pag{
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 4rem;
-            font-family: Bebas;
-            
-            }
-    
-            .contactoMenu__item{
-                padding-right: 50px;
-                padding-left: 50px;
-            }
-            
-            .contactoMenu__logo{
-            width: 96px;
-            height:96px;
-            }
+        height: 900px;}
 
-            body{background-image: url("../Media/Contacto/ContactoPC2.png");}
+    .formNAM{width: 70%;}
 
 
 
-            @media screen and (max-width: 900px){
-    
-                .contactoMenu{
-                    flex-direction: column;
-                    transform: translateY(-100%);
-                    background-color: #282828;
-                    width: 900px;
-                    max-width: 100%;
-                }
-                .contactoMenu__logo{display: none;}
-        
-                .contactoMenu__pagN{color: #fff;}
-        
-            .contactoMenu__pag{
-                font-size: 2.2rem;
-                }
-            
+    .containerForm{
+        width: 60%;
+        max-width: 900px;
+        grid-template-columns: repeat(1,1fr);
+        transform: translateY(-63px);
+        max-height: 100%;}
 
-            body{
-                background-image: url("../Media/Contacto/ContactoTablet.png");
-                background-size: cover;
-            }
+    .containerForm form textarea{
+        max-width: 530px;
+        min-width: 100px;
+        min-height: 140px;
+        max-height: 150px;}
 
+    .containerForm p{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        margin-top: 5px;}
 
-            .contactoMain{
-                display: flex;
-                align-items: center;
-                height: 900px;
-            }
+    .containerForm a{
+        margin-top: 5px;
+        margin-bottom: 5px};}
 
-            .formNAM{width: 70%;}
+    @media screen and (max-width: 600px){
 
+    body{background-image: url("../Media/Contacto/ContactoCelu.png");}
 
+    .contactoMain{
+        display: flex;
+        align-items: center;
+        height: 1200px;}
 
-            .containerForm{
-                width: 60%;
-                max-width: 900px;
-                grid-template-columns: repeat(1,1fr);
-                transform: translateY(-63px);
-                max-height: 100%;
-        }
-
-        .containerForm form textarea{
-            max-width: 530px;
-            min-width: 100px;
-            min-height: 140px;
-            max-height: 150px;
-        }
-
-        .containerForm p{
-            font-size: 1.5rem;
-            margin-bottom: 5px;
-            margin-top: 5px;
-        }
-
-        .containerForm a{
-            margin-top: 5px;
-            margin-bottom: 5px};
-        }
-
-        @media screen and (max-width: 600px){
-
-            body{
-                background-image: url("../Media/Contacto/ContactoCelu.png");
-            }
-
-            .contactoMain{
-                display: flex;
-                align-items: center;
-                height: 1200px;
-            }
-            .containerForm a{
-            font-size: 1rem;
-            }
-        }
+    .containerForm a{font-size: 1rem;}
+    }
