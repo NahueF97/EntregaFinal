@@ -1,0 +1,278 @@
+html{font-size: 62.5%;}
+
+*{
+margin: 0;
+padding: 0;}
+
+@font-face{font-family: Bebas;
+    src: url(../Fonts/Bebas.ttf)}
+
+body{
+margin: 0;
+padding: 0;
+background-image: url("../Media/Index/FondoIndexPc2.png");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+max-width: 100%;
+overflow-x:hidden ;
+
+}
+
+.logoBgt{max-width: 100%;}
+
+.MenuHambIcon{
+width: 40px;
+position: absolute;
+top: 1.5rem;
+right: 1rem;
+cursor: pointer;
+z-index: 1;
+
+}
+
+@media screen and (min-width: 900px){
+
+    .MenuHambIcon{
+        display: none;
+    }
+
+}
+
+.navIndex{
+display: flex;
+justify-content: center;
+}
+
+.indexMenu{
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+transition: 0.4s;
+transform: translateY(0);
+}
+
+
+.MenuHamb__checkbox{display: none;}
+
+.MenuHamb__checkbox:checked + .indexMenu { 
+    transform: translateY(0);
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    body{background-image: url("../Media/Index/TabletIndex.png");}
+
+    .indexMenu{
+        flex-direction: column;
+        transform: translateY(-100%);
+        background-color: #282828;
+        width: 900px;
+        max-width: 100%;
+    }
+    .indexMenu__logo{display: none;}
+
+    .articuloIndex{
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .articuloIndex div{
+        display: flex;
+        justify-content: center;
+        width: 650px;
+    transform: translatey(-175px);
+
+    }
+
+    .pIndex{
+        font-size: 2.5rem;
+        text-align: center;
+        }
+
+    .redesIndex{top: 500px;}
+
+}
+
+.indexMenu__pag{
+color: whitesmoke;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 4rem;
+font-family: Bebas;
+
+}
+
+.indexMenu__item{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.indexMenu__logo{
+width: 120px;
+height:120px;
+}
+
+.mainIndex{
+padding-bottom: 245px;
+}
+
+.articuloIndex{
+
+display: flex;
+align-content: center;
+flex-wrap: wrap;
+
+height: 500px;
+max-width: 100%;
+
+font-size: 5rem;
+font-family: 'Rajdhani', sans-serif; 
+
+padding-left: 10px;
+padding-top: 100px;
+}
+
+.pIndex{
+width: 350px;
+padding-top: 130px;
+}
+
+.redesIndex{
+
+display:flex ;
+flex-direction: column;
+position: absolute;
+right: 0px;
+top:400px;
+
+}
+
+.redesIndex img{
+height: 64px;
+width: 64px;
+padding-bottom: 20px;
+padding-right: 5px;
+}
+
+@media screen and (max-width: 900px){
+
+body{overflow-x: visible;}
+
+.redesIndex{top:700px;}
+}
+
+.footerIndex{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+
+}
+
+.botonIndex{
+
+font-family: 'Rajdhani', sans-serif; 
+font-size: 2.5rem;
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: 15px 50px;
+border: 2px solid #b14c36;
+border-radius: 10px;
+width: 100px;
+max-width: 100%;
+text-align: center;
+}
+
+.botonIndex:hover { 
+animation: pulso 1s ease-in-out;
+}
+
+.logoRedesIndex:hover{
+transform: translateX(-10px);
+transition: .8s;
+
+}
+
+@keyframes pulso {
+
+    0%{
+        box-shadow: 
+        0 0 15px #e88860,
+        0 0 30px #531f09;
+    }
+    
+}
+
+
+.lineaNav{
+padding-bottom: 0;
+padding-top: 0;
+margin-top: 0;
+margin-bottom: 0;
+animation: colorChange 1.5s infinite;
+}
+
+@keyframes colorChange {
+
+    0%{ background-color: #b14c36; }
+    14%{ background-color: #db5e42; }
+    28%{ background-color: #e88860; }
+    42%{ background-color: #fff; }
+    56%{ background-color: #fff; }
+    70%{ background-color: #e88860; }
+    84%{ background-color: #db5e42; }
+    100%{ background-color: #b14c36; }
+    
+}
+
+
+@media screen and (max-width: 600px){
+
+body{
+    background-image: url("../Media/Index/FondoIndexCelu.png");
+    overflow-x: hidden;
+}
+
+.indexMenu__pag{
+    font-size: 3rem
+}
+
+.lineaNav{
+    display: none;
+}
+
+.botonIndex{
+    font-size: 1rem;
+    width: 40px;
+    height: 10px;
+    padding: 15px 15px;
+}
+
+.redesIndex{top: 225px;}
+
+.articuloIndex{
+    align-content: flex-end;
+    transform: translateY(85px);
+
+}
+
+.footerIndex{
+    justify-content: center;
+}
+
+.botonIndexEsp{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+}
+

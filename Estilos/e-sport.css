@@ -1,0 +1,244 @@
+html{font-size: 62.5%;}
+
+*{
+    margin: 0;
+    padding: 0;}
+    
+    @font-face{font-family: Bebas;
+        src: url(../Fonts/Bebas.ttf)}
+    
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../Media/e-Sports/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    max-width: 100%;
+
+    }
+
+    .MenuHambIcon{
+        width: 40px;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 1;
+        
+        }
+
+        .logoBgt{max-width: 100%;}
+
+
+
+
+/*Tarjetas*/
+
+.articuloTarjeta{
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    color: #232323;
+    font-size: 1.3rem;
+    height: 450px;
+    filter:grayscale(100);
+}
+
+
+.headerTarjeta img{ 
+border-radius: 8px 8px 0 0;
+max-height: 200px;
+height: 200px;
+max-width: 100%;
+padding-bottom: 5px;
+}
+
+
+.textoTarjeta{width: 250px;}
+
+.textoTarjeta p{max-width: 100%;}
+
+.divFooterTarjeta span{
+    background-color: tomato;
+    color: #232323;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+
+}
+
+.footerTarjeta{
+    padding: 0 1rem;
+    height: 250px;
+}
+
+.logoTarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.logoTarjeta h3{
+    padding-bottom: 5px;
+}
+
+.imagenLogoTarjeta img{
+    width: 40px;
+    height: 40px;
+}
+
+.imagenLogoTarjeta img:hover{transform: translateY(-5px);}
+
+.clickTarjeta{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.3rem;}
+
+
+
+.textoTarjeta p{
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.textoTarjeta h3{    
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 5px;
+}
+
+
+.articuloTarjeta:hover{
+    filter: grayscale(0);
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+
+
+/* Fin tarjeta*/
+
+.e-SportsMain{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.e-SportsParrafo{
+    display: flex;
+    width: 200px;
+    max-width: 100%;
+    font-size: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+    padding-right: 100px;
+    padding-left: 20px;
+    height: 450px;
+    align-items: center; 
+    
+}
+
+.e-SportTitulo{
+    display: flex;
+    justify-content: center;}
+
+.e-SportTitulo h1{
+    padding-top: 25px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+text-align: center;}
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (min-width: 900px){
+        
+            .MenuHambIcon{
+                display: none;
+            }
+        
+        }
+        
+        .e-SportsNav{
+        display: flex;
+        justify-content: center;
+        background-color: #232323;
+        }
+        
+        .e-SportsMenu{
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        background-color: #232323;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+        transform: translateY(0);
+        }
+        
+        
+        .MenuHamb__checkbox{display: none;}
+        
+        .MenuHamb__checkbox:checked + .e-SportsMenu { 
+            transform: translateY(0);
+        
+        }
+        
+        .e-SportsMenu__pag{
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 3rem;
+            font-family: Bebas;
+            
+            }
+    
+            .e-SportsMenu__item{
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+            
+            .e-SportsMenu__logo{
+            width: 96px;
+            height:96px;
+
+            }
+
+            @media screen and (max-width: 900px){
+    
+                .e-SportsMenu{
+                    flex-direction: column;
+                    transform: translateY(-100%);
+                    background-color: #282828;
+                    width: 900px;
+                    max-width: 100%;
+                }
+                .e-SportsMenu__logo{display: none;}
+        
+                .e-SportsMenu__pagN{color: #fff;}
+        
+            .e-SportsMenu__pag{
+                font-size: 2.2rem;
+            }
+        }

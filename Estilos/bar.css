@@ -1,0 +1,197 @@
+html{font-size: 62.5%;}
+
+*{
+    margin: 0;
+    padding: 0;}
+    
+    @font-face{font-family: Bebas;
+        src: url(../Fonts/Bebas.ttf)}
+    
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../Media/Bar/Fondo-Bar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    max-width: 100%;
+
+    }
+
+    .MenuHambIcon{
+        width: 40px;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 1;
+        
+        }
+
+        .logoBgt{max-width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 900px){
+    
+        .MenuHambIcon{
+            display: none;
+        }
+    
+    }
+    
+    .barNav{
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    }
+    
+    .barMenu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform: translateY(0);
+    }
+    
+    
+    .MenuHamb__checkbox{display: none;}
+    
+    .MenuHamb__checkbox:checked + .barMenu { 
+        transform: translateY(0);
+    
+    }
+    
+    .barMenu__pag{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 3rem;
+        font-family: Bebas;
+        
+        }
+
+        .barMenu__item{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        
+        .barMenu__logo{
+        width: 96px;
+        height:96px;
+        }
+
+    .barMain{
+        display: flex;
+        justify-content: center;
+    }
+
+    .barArticleTitulo{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+
+        padding-bottom: 25px;
+        text-align: center;
+
+    }
+
+    .barArticleTitulo h1{
+        color: #212121;
+        background-color: white;
+    }
+
+    .barRedes{
+
+        display:flex ;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0px;
+        top:250px;
+        
+        }
+        
+        .barRedes img{
+        height: 50px;
+        width: 50px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+        }
+
+        .somosLogoRedes:hover{
+            transform: translateX(-10px);
+            transition: .8s;}
+    
+
+    .barMenuCarta{transform: scale(.9);}
+
+    .barMenuCarta:hover { 
+        animation: pulso 2s infinite;
+        transform: scale(1);
+        transform: translateY(25px);
+        transition: 1s;
+        }
+    
+        @keyframes pulso {
+    
+            0%{
+                box-shadow: 
+                0 0 30px #e88860,
+                0 0 50px #531f09;
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 900px){
+    
+            .barMenu{
+                flex-direction: column;
+                transform: translateY(-100%);
+                background-color: #282828;
+                width: 900px;
+                max-width: 100%;
+            }
+            .barMenu__logo{display: none;}
+    
+            .barMenu__pagN{color: #fff;}
+    
+        .barMenu__pag{
+            font-size: 2.2rem;
+            }
+        }

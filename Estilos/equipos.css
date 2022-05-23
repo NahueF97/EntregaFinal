@@ -1,0 +1,286 @@
+html{font-size: 62.5%;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+        width: 100%;
+        height: 937px    ;
+        padding: 0;
+        margin: 0;
+        
+}
+    
+    @font-face{font-family: Bebas;
+        src: url(../Fonts/Bebas.ttf)}
+
+    
+    .logoBgt{max-width: 100%;}
+
+    
+    .MenuHambIcon{
+    width: 40px;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    
+    }
+    
+    @media screen and (min-width: 900px){
+    
+        .MenuHambIcon{
+            display: none;
+        }
+    
+    }
+    
+    .equiposNav{
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+    }
+    
+    .equiposMenu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #232323;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform: translateY(0);
+    }
+    
+    
+    .MenuHamb__checkbox{display: none;}
+    
+    .MenuHamb__checkbox:checked + .equiposMenu { 
+        transform: translateY(0);
+    
+    }
+    
+    .equiposMenu__pag{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 3rem;
+        font-family: Bebas;
+        
+        }
+
+        .equiposMenu__item{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        
+        .equiposMenu__logo{
+        width: 96px;
+        height:96px;
+        }
+
+    .equiposSection{ 
+        font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .equiposSectionD{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        width: 100%;
+        height: 600px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .equiposParalax{
+    background: #232323 fixed no-repeat 50% 50%;
+    background-size: cover;
+    }
+    
+    #banner{background-image: url(../Media/Equipos/Banner.png);
+    background-size:contain}
+
+    #pc1{background-image: url(../Media/Equipos/Gamer.png);
+    background-size:contain}
+
+    #pc2{background-image: url(../Media/Equipos/Diseño.png);
+    background-size:contain}
+    
+    #pc3{background-image: url(../Media/Equipos/Stream-Footer.png);
+    background-size:contain}
+
+    .articuloParalax{
+    width: 500px;
+    height:300px;
+    transform: translateX(-150px);
+}
+
+.articuloParalaxD{
+    transform: translateX(-200px);
+}
+
+.tituloParalax{
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.equiposSub{
+    font-size: 2.5rem;
+    color: #b14c36;
+    padding-bottom: 7px;
+}
+
+.contenidoParalax{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.equiposBoton{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: absolute;
+    color: #b14c36;
+    text-decoration: none;
+    padding: 5px 5px;
+    border: 2px solid #b14c36;
+    border-radius: 10px;
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+    right: 450px;
+    transform: translateY(-55px);
+    }
+    
+    .equiposBoton:hover { 
+    animation: pulso 1s ease-in-out;
+    }
+
+    @keyframes pulso {
+
+        0%{
+            box-shadow: 
+            0 0 15px #e88860,
+            0 0 30px #531f09;
+        }
+        
+    }
+
+    @media screen and (max-width: 900px){
+    
+        .equiposMenu{
+            flex-direction: column;
+            transform: translateY(-100%);
+            background-color: #282828;
+            width: 900px;
+            max-width: 100%;
+        }
+        .equiposMenu__logo{display: none;}
+
+        .equiposMenu__pagN{color: #fff;}
+
+    .equiposMenu__pag{
+        font-size: 2.2rem;
+        }
+
+    .equiposSection{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .equiposSectionD{
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+
+    .articuloParalax{ 
+        transform:translate(20px, 100px);
+        width: 400px;
+        text-align: justify;
+    }
+
+    .articuloParalaxD{
+        transform:translate(20px, 100px);
+        width: 400px;
+        text-align: justify;
+    }
+
+    .tituloParalax{
+        font-size: 3rem;
+    }
+    
+    .equiposSub{
+        font-size: 2rem;
+    }
+    
+    .contenidoParalax{
+        font-size: 1rem;
+    }
+
+    #banner{background-image: url(../Media/Equipos/BannerTablet.png);}
+    
+        #pc1{background-image: url(../Media/Equipos/gamerTablet.png);}
+    
+        #pc2{background-image: url(../Media/Equipos/diseñoTablet.png);}
+        
+        #pc3{background-image: url(../Media/Equipos/streamerTablet.png);}
+
+    .equiposBoton{right: 20px;}
+
+    }
+
+    @media screen and (max-width: 600px){
+
+        .equiposSection{ height: 500px;}
+
+        .equiposSectionD{ height: 500px;}
+    
+        .tituloParalax{
+            font-size: 2rem;
+        }
+        
+        .equiposSub{
+            font-size: 1.5rem;
+        }
+        
+        .contenidoParalax{
+            font-size: 1rem;
+        }
+
+        .articuloParalax{
+            transform:translate(20px, 50px);
+            width: 250px;
+        
+        }
+        
+        .articuloParalaxD{
+            width: 250px;
+            transform:translate(20px, 50px);}
+
+        #banner{background-image: url(../Media/Equipos/BannerCel.png);}
+    
+
+}
+
+        
+
