@@ -32,33 +32,6 @@ html{font-size: 62.5%;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @media screen and (min-width: 900px){
-    
-        .MenuHambIcon{
-            display: none;
-        }
-    
-    }
     
     .barNav{
     display: flex;
@@ -152,7 +125,7 @@ html{font-size: 62.5%;}
     .barMenuCarta{transform: scale(.9);}
 
     .barMenuCarta:hover { 
-        animation: pulso 2s infinite;
+        animation: pulso 2s ease-in-out;
         transform: scale(1);
         transform: translateY(25px);
         transition: 1s;
@@ -170,28 +143,27 @@ html{font-size: 62.5%;}
 
 
 
+/* Responsive */
+
+    @media screen and (min-width: 900px)
+    {
+    .MenuHambIcon{
+    display: none;}
+    }
 
 
-
-
-
-
-
-
-        @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px)
+    {
+    .barMenu{
+        flex-direction: column;
+        transform: translateY(-100%);
+        background-color: #282828;
+        width: 900px;
+        max-width: 100%;}
+        
+        .barMenu__logo{display: none;}
     
-            .barMenu{
-                flex-direction: column;
-                transform: translateY(-100%);
-                background-color: #282828;
-                width: 900px;
-                max-width: 100%;
-            }
-            .barMenu__logo{display: none;}
+        .barMenu__pagN{color: #fff;}
     
-            .barMenu__pagN{color: #fff;}
-    
-        .barMenu__pag{
-            font-size: 2.2rem;
-            }
-        }
+        .barMenu__pag{font-size: 2.2rem;}
+    }

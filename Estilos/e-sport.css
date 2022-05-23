@@ -31,8 +31,6 @@ html{font-size: 62.5%;}
         .logoBgt{max-width: 100%;}
 
 
-
-
 /*Tarjetas*/
 
 .articuloTarjeta{
@@ -118,8 +116,6 @@ padding-bottom: 5px;
     transform: scale(1.05);
 }
 
-
-
 /* Fin tarjeta*/
 
 .e-SportsMain{
@@ -155,90 +151,75 @@ text-align: center;}
 
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        @media screen and (min-width: 900px){
-        
-            .MenuHambIcon{
-                display: none;
-            }
-        
-        }
-        
-        .e-SportsNav{
+    .e-SportsNav{
         display: flex;
         justify-content: center;
         background-color: #232323;
-        }
+}
         
-        .e-SportsMenu{
-        list-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-        background-color: #232323;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        transition: 0.4s;
+    .e-SportsMenu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #232323;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform: translateY(0);
+    }
+        
+        
+    .MenuHamb__checkbox{display: none;}
+        
+    .MenuHamb__checkbox:checked + .e-SportsMenu { 
         transform: translateY(0);
-        }
+    }
         
-        
-        .MenuHamb__checkbox{display: none;}
-        
-        .MenuHamb__checkbox:checked + .e-SportsMenu { 
-            transform: translateY(0);
-        
-        }
-        
-        .e-SportsMenu__pag{
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 3rem;
-            font-family: Bebas;
-            
-            }
+    .e-SportsMenu__pag{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 3rem;
+        font-family: Bebas;
+    }
     
-            .e-SportsMenu__item{
-                padding-right: 50px;
-                padding-left: 50px;
-            }
+    .e-SportsMenu__item{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
             
-            .e-SportsMenu__logo{
-            width: 96px;
-            height:96px;
+    .e-SportsMenu__logo{
+        width: 96px;
+        height:96px;
+    }
 
-            }
 
-            @media screen and (max-width: 900px){
+
+/*Responsive*/
+
+
+    @media screen and (min-width: 900px){
+
+        .MenuHambIcon{
+            display: none;}
+    }
+
+    @media screen and (max-width: 900px){
     
-                .e-SportsMenu{
-                    flex-direction: column;
-                    transform: translateY(-100%);
-                    background-color: #282828;
-                    width: 900px;
-                    max-width: 100%;
-                }
-                .e-SportsMenu__logo{display: none;}
+        .e-SportsMenu{
+            flex-direction: column;
+            transform: translateY(-100%);
+            background-color: #282828;
+            width: 900px;
+            max-width: 100%;}
+
+        .e-SportsMenu__logo{display: none;}
         
-                .e-SportsMenu__pagN{color: #fff;}
+        .e-SportsMenu__pagN{color: #fff;}
         
-            .e-SportsMenu__pag{
-                font-size: 2.2rem;
-            }
-        }
+    .e-SportsMenu__pag{
+        font-size: 2.2rem;}
+    }

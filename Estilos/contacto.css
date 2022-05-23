@@ -247,4 +247,7 @@ html{font-size: 62.5%;}
                 align-items: center;
                 height: 1200px;
             }
+            .containerForm a{
+            font-size: 1rem;
+            }
         }
