@@ -141,8 +141,6 @@ html{font-size: 62.5%;}
             
         }
 
-
-
 /* Responsive */
 
     @media screen and (min-width: 900px)
@@ -150,7 +148,6 @@ html{font-size: 62.5%;}
     .MenuHambIcon{
     display: none;}
     }
-
 
     @media screen and (max-width: 900px)
     {

@@ -28,7 +28,6 @@ top: 1.5rem;
 right: 1rem;
 cursor: pointer;
 z-index: 1;
-
 }
 
 @media screen and (min-width: 900px){
@@ -36,7 +35,6 @@ z-index: 1;
     .MenuHambIcon{
         display: none;
     }
-
 }
 
 .navIndex{
